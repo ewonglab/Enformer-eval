@@ -9,7 +9,10 @@ make sure you are in the clone repository
 ```bash
 cp  -r /g/data/zk16/zelun/z_li_hon/wonglab_github/Enformer-eval/eval_script/data ./eval_script/data
 ```
-
+or you could make a symlink to the data folder 
+```bash
+ln -s /g/data/zk16/zelun/z_li_hon/wonglab_github/Enformer-eval/eval_script/data ./eval_script/data
+```
 3. Need to reconfigure the paths in notebook for it to work
 
 # Start a GPU node
