@@ -5,6 +5,7 @@ git clone git@github.com:ewonglab/Enformer-eval.git
 ```
 
 2. Copy over over download the data folder
+make sure you are in the clone repository
 ```bash
 cp  -r /g/data/zk16/zelun/z_li_hon/wonglab_github/Enformer-eval/eval_script/data ./eval_script/data
 ```
