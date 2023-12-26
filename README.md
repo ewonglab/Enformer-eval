@@ -28,6 +28,7 @@ You can specify the cache directory everytime you load a model with .from_pretra
 Example for python:
 
 import os
+
 os.environ['TRANSFORMERS_CACHE'] = '/blabla/cache/'
 
 Example for bash:
