@@ -205,7 +205,7 @@ class EnformerOps:
                     
                 # aa_milne_arr = [x for x in "abcdefghijklmnopqrstuvwxyz1234567890"]
                 # random_var = ''.join(np.random.choice(aa_milne_arr, 20))
-                random_var = "suffix"
+                random_var = "predicted"
                 
                 capture_bigwig_names.append(f"{n}_{random_var}.bw")
                 # print(f"chr_test: {chr_test} mod_start: {mod_start} p_values: {p_values} n: {n}")
@@ -315,7 +315,6 @@ class EnformerOps:
 
         values_conversion = (values * 1000 ).astype(np.int64) + 0.0
         bw.addEntries(chr_name, [start + (128 * x) for x in range(values_conversion.shape[0])], values=values_conversion, span=128)
-
         return {
             "name": f"{track_name}",
             "path": f"{track_name}_{random_var}.bw",
