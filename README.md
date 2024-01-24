@@ -27,7 +27,7 @@ cur_wd = os.path.join(eval_script_path, 'notebooks')
 4. Make sure that the huggingface cache is set to `/g/data/zk16/zelun/saved_models` so you don't have to re-download the model
 ```python
 hf_hub = '/g/data/zk16/zelun/saved_models'
-os.environ['TRANSFORMER_CACHE'] = hf_hub
+os.environ['TRANSFORMERS_CACHE'] = hf_hub
 ```
 
 # Start a GPU node
